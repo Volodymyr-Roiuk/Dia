@@ -1,0 +1,239 @@
+.header {
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(110deg, #56ccf2 0%, #56ccf2 82%, #ffff 82%, #fff 100%);
+  height: 900px;
+  padding: 1px;
+
+  &__info {
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+  }
+
+  &__heading {  
+    font-size: 64px;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+
+  &__text {
+    margin-top: 22px;
+    width: 70%;
+    font-size: 24px;
+  }
+
+  &__btn {
+    width: 226px;
+    height: 56px;
+    border-radius: 64px;
+    background-color: #fff;
+    border: none;
+    margin-top: 42px;
+    color: $heading-color;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__photo {
+      margin: 80px auto 0 auto;
+      width: max-content;
+      position: relative;
+      left: 0;
+      right: 0;
+
+    &_img {
+      max-width: 1200px;
+      width: 80vw;
+      height: $header-photo-width;
+      object-fit: fill;
+      position: relative;
+      transition: width 0.5s, height 0.5s;
+    }
+
+    &_intro {
+      font-size: 12.6px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $blue-color;
+      position: absolute;
+      bottom: 144px;
+      left: 98px;
+    }
+
+    &_text {
+      width: 264px;
+      height: 54px;
+      font-size: 19.6px;
+      font-weight: 900;
+      line-height: 140%;
+      position: absolute;
+      bottom: 86px;
+      left: 98px;
+    }
+
+    &_btn {
+      position: absolute;
+      width: 162px;
+      height: 64px;
+      background-color: $yellow-color;
+      border-radius: 50px;
+      top: calc(50% + 20px);
+      left: -80.5px;
+      cursor: pointer;
+      transition: top 0.5s, bottom 0.5s, right 0.5s, left 0.5s;
+      
+      &_left {
+        position: absolute;
+        top: 20px;
+        left: 33.5px;
+      }
+      &_right {
+        position: absolute;
+        top: 20px;
+        right: 34px;
+      }
+    }
+  }
+  
+  &__socials {
+    display: flex;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 315px;
+    right: -250px;
+    transition: top 0.5s, bottom 0.5s, right 0.5s, left 0.5s;
+
+    &_item {
+      color: $heading-color;
+      margin-left: 85px;
+      font-size: 12.6px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: margin;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .header {
+      &__info {
+        width: 80%;
+        margin: 80px 10% 0 10%;
+    }
+
+    &__photo {
+      &_img {
+      height: $header-photo-width-small;
+      }
+
+      &_btn {
+        border-radius: 0;
+        top: calc(100% - 6px);
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+    }
+
+    &__socials {
+      top: 250px;
+      right: -220px;
+
+      &_item {
+        margin-left: 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+
+    &__info {
+      width: 80%;
+    }
+
+    &__heading {
+      font-size: 48px;
+    }
+
+    &__text {
+      width: 70%;
+      font-size: 18px;
+      margin: 22px 0 0 0;
+    }
+
+    &__photo {
+      &_img {
+      height: $header-photo-width-smaller;
+      }
+    }
+
+    &__socials {
+      top: 185px;
+      right: -190px;
+
+      &_item {
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .header {
+    &__photo {
+      &_img {
+        height: $header-photo-width-smallest;
+      }
+    }
+
+    &__socials {
+      top: 130px;
+      right: -130px;
+
+      &_item {
+        margin-left: 15px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {  
+      font-size: 36px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    &__heading {  
+      font-size: 24px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    &__photo_intro, &__photo_text {
+      display: none;
+    }
+  }
+}

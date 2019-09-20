@@ -1,0 +1,23 @@
+.intro {
+  width: 755px;
+  margin: 465px auto 0 auto;
+
+  &__text {
+    font-size: 24px;
+    font-weight: 600;
+    color: $heading-color;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    width: 50%;
+    margin: 495px 25vw 0 25vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    margin: 295px 25vw 0 25vw;
+  }
+}
