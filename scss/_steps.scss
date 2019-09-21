@@ -39,8 +39,8 @@
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
     padding: 48px 0;
     margin-bottom: 128px;
-    transition: background-color 1s;
     max-height: 252px;
+    transition: background-color 1s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
 
     &:nth-child(odd) {
       top: 128px;
@@ -153,6 +153,21 @@
       &:nth-child(even) {
         left: 140px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .steps {
+    &__step {
+      
+      &:nth-child(even) {
+        left: 55px;
+      }
+    }
+
+    &__text {
+      width: 280px;
     }
   }
 }

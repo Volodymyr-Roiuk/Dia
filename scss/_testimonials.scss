@@ -12,6 +12,7 @@
     justify-content: space-around;
     width: 90%;
     margin: 86px auto 0 auto;
+    max-width: 1200px;
   }
 
   &__item {
@@ -102,6 +103,14 @@
     &__top {
       margin-right: auto;
       margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .testimonials {
+    &__top {
+      margin: 166px auto 0 auto;
     }
   }
 }

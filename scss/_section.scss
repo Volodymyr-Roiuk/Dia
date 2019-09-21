@@ -25,3 +25,12 @@
     color: $heading-color;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .section {
+    &__heading {
+      font-size: 24px;
+      width: 300px;
+    }
+  }
+}
