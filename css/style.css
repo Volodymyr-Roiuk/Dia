@@ -581,6 +581,11 @@ body, p, h1, h2, h3 {
     margin: 250px auto 0 auto;
   }
 }
+@media screen and (min-width: 2200px) {
+  .features__content {
+    margin: 250px 25% 0;
+  }
+}
 .testimonials {
   background: linear-gradient(to bottom, #fff 80%, #fafafa 80% 100%);
 }
