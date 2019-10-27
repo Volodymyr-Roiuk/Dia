@@ -1,0 +1,173 @@
+.steps {
+  background-color: #fafafa;
+  position: relative;
+
+  &__content {
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 80vw;
+    margin: 0 auto;
+
+    &_text {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    width: 362px;
+    margin-top: 62px;
+  }
+
+  &__column{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    z-index: 2;
+    transition: flex-direction 1s; //?????????
+  }
+
+  &__step {
+    position: relative;
+    background-color: #fff;
+    width: 240px;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+    padding: 48px 0;
+    margin-bottom: 128px;
+    max-height: 252px;
+    transition: background-color 1s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
+
+    &:nth-child(odd) {
+      top: 128px;
+    }
+
+    &_img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &_number {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: calc(16px - 48px);
+    }
+
+    &_text {
+      width: 176px;
+      font-size: 12.6px;
+      color: $heading-color;
+      margin: 4px auto 0 auto;
+      transition: color 1s;
+    }
+    &_one {
+      color: #56CCF2;
+
+      &:hover {
+        background-color: #56CCF2;
+
+        .steps__step_text {
+          color: #fff;
+        }
+      }
+    }
+
+    &_two {
+      color: #FCC304;
+      
+      &:hover {
+        background-color: #FCC304;
+
+        .steps__step_text {
+          color: #fff;
+        }
+      }
+    }
+
+    &_three {
+      color: #03D542;
+
+      &:hover {
+        background-color: #03D542;
+
+        .steps__step_text {
+          color: #fff;
+        }
+      }
+    }
+
+    &_four {
+      color: #F25656;
+
+      &:hover {
+        background-color: #F25656;
+
+        .steps__step_text {
+          color: #fff;
+        }
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .steps {
+    &__content {
+      flex-direction: column;
+
+      &_text {
+        width: max-content;
+        margin: 0 auto;
+      }
+    }
+
+    &__column {
+      width: 73%;
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+
+
+@media screen and (max-width: 820px) {
+  .steps {
+    &__step {
+      position: relative;
+      margin: 30px 0 0 0;
+      
+      &:nth-child(odd) {
+        top: 0;
+      }
+      &:nth-child(even) {
+        left: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .steps {
+    &__step {
+      
+      &:nth-child(even) {
+        left: 55px;
+      }
+    }
+
+    &__text {
+      width: 280px;
+    }
+  }
+}

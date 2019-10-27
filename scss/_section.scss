@@ -1,0 +1,36 @@
+.section {
+  &__intro {
+    display: flex;
+    margin-bottom: 19px;
+
+    &_logo {
+      width: 21px;
+      height: 21px;
+      margin-right: 16px;
+    }
+
+    &_text {
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $blue-color;
+    }
+  }
+
+  &__heading {
+    width: 362px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    color: $heading-color;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    &__heading {
+      font-size: 24px;
+      width: 300px;
+    }
+  }
+}

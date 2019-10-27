@@ -1,0 +1,162 @@
+.footer {
+  background-color: #fafafa;
+  padding: 1px;
+
+
+  &__content {
+    width: 80%;
+    margin: 90px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+  }
+
+  &__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    > input {
+      height: 40px;
+      border: none;
+      border-bottom: solid 1px #E1E1E1;
+      background-color: #fafafa;
+      margin-top: 30px;
+
+      &:focus {
+        outline-color: $blue-color;
+      }
+
+      &::placeholder {
+        color: #152032;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+      }
+    }
+
+    &_btn {
+      width: 226px;
+      height: 56px;
+      border: none;
+      letter-spacing: 1px;
+      background-color: #2F80ED;
+      border-radius: 64px;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 100px;
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &_name {
+      font-weight: 800;
+      font-size: 12.6px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $text-color;
+      margin-top: 42px;
+    }
+
+    &_text {
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $blue-color;
+    }
+
+    &_social {
+      margin-right: 48px;
+      margin-top: 40px;
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 130px auto 20px auto; 
+    font-weight: bold;
+    font-size: 16px;
+    color: $heading-color;
+    max-width: 1500px;
+
+    &_items {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    &_item {
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    &__nav {
+      width: 90%;
+
+      &_items {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 100%;
+
+      &_btn {
+        margin: 100px auto 50px auto;
+      }
+    }
+
+    &__contacts {
+      margin: 0 auto 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      margin: 50px auto 20px auto;
+
+      &_items {
+        width: 100%;
+      }
+    }
+  }
+}
