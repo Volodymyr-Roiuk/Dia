@@ -40,6 +40,12 @@
     margin-top: 55px;
     margin-bottom: 200px;
     z-index: 2;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

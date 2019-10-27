@@ -34,6 +34,11 @@
     letter-spacing: 1px;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__photo {
@@ -47,7 +52,7 @@
       max-width: 1200px;
       width: 80vw;
       height: $header-photo-width;
-      object-fit: fill;
+      object-fit: cover;
       position: relative;
       transition: width 0.5s, height 0.5s;
     }
@@ -114,7 +119,11 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: margin;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
       
       &:first-child {
         margin-left: 0;

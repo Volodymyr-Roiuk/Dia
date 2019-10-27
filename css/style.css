@@ -41,6 +41,10 @@ body, p, h1, h2, h3 {
   letter-spacing: 1px;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.5s;
+}
+.header__btn:hover {
+  transform: scale(1.1);
 }
 .header__photo {
   margin: 80px auto 0 auto;
@@ -53,7 +57,7 @@ body, p, h1, h2, h3 {
   max-width: 1200px;
   width: 80vw;
   height: 640px;
-  object-fit: fill;
+  object-fit: cover;
   position: relative;
   transition: width 0.5s, height 0.5s;
 }
@@ -114,7 +118,10 @@ body, p, h1, h2, h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: margin;
+  transition: transform 0.5s;
+}
+.header__socials_item:hover {
+  transform: scale(1.1);
 }
 .header__socials_item:first-child {
   margin-left: 0;
@@ -607,6 +614,8 @@ body, p, h1, h2, h3 {
   box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
   background-color: #fff;
   margin-bottom: 40px;
+  transition: transform 0.5s;
+  cursor: pointer;
 }
 .testimonials__item_rectangle {
   position: absolute;
@@ -642,6 +651,9 @@ body, p, h1, h2, h3 {
   letter-spacing: 2px;
   width: max-content;
   margin: 0 auto 58px auto;
+}
+.testimonials__item:hover {
+  transform: scale(1.1);
 }
 
 .bg-blue {
@@ -723,6 +735,11 @@ body, p, h1, h2, h3 {
   margin-top: 55px;
   margin-bottom: 200px;
   z-index: 2;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.CTA__btn:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1100px) {
@@ -869,6 +886,9 @@ body, p, h1, h2, h3 {
   background-color: #fafafa;
   margin-top: 30px;
 }
+.footer__form > input:focus {
+  outline-color: #56CCF2;
+}
 .footer__form > input::placeholder {
   color: #152032;
   font-weight: bold;
@@ -885,6 +905,11 @@ body, p, h1, h2, h3 {
   color: #fff;
   font-weight: bold;
   margin-top: 100px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.footer__form_btn:hover {
+  transform: scale(1.1);
 }
 .footer__contacts {
   display: flex;
@@ -908,6 +933,11 @@ body, p, h1, h2, h3 {
 .footer__contacts_social {
   margin-right: 48px;
   margin-top: 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.footer__contacts_social:hover {
+  transform: scale(1.1);
 }
 .footer__nav {
   display: flex;
@@ -923,6 +953,13 @@ body, p, h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+.footer__nav_item {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.footer__nav_item:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1300px) {
